@@ -1,0 +1,40 @@
+body {
+    background-image: url("https://wallpaperaccess.com/full/2945784.jpg");
+    /*background-repeat: repeat;*/
+    background-size: contain;
+    background-attachment: fixed; /*na stałe zdjęcie w jednym miejscu, nie można scrollować*/
+}
+h1 {
+    background: aquamarine;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: deepskyblue;
+    border-radius: 25px;
+    text-align: center;
+    font-style: oblique;
+    color: red;
+    font-size: 50px;
+}
+a {
+    font-style: normal;
+    font-size: 50px;
+    color: blueviolet;
+    transition: color 0.5s;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color: deepskyblue;
+}
+
+.imageC\+\+ {
+    border-radius: 20px;
+    width: 100%;
+}
+
+#sign {
+
+    font-size: 50px;
+    text-align: center;
+}
