@@ -1,0 +1,31 @@
+body {
+    background: #5D6D7E;
+}
+
+.container {
+    background: #85929E;
+    padding: 20px;
+    height: 850px;
+    display: flex; /* metoda flexboxa */
+    justify-content: center; /*  justify-conten formatuje nasze divy w flexboxie */
+}
+
+.container div {
+    margin: 10px; /*odstęp między wierszami html*/
+    width: 200px; /*szerokość*/
+}
+
+.zielony {
+    background: #58D68D;
+    min-height: 100px; /* minimalna wysokość*/
+}
+
+.zolty {
+    background: #F4D03F;
+    min-height: 250px;
+}
+
+.niebieski {
+    background: #3498DB;
+    min-height: 300px;
+}

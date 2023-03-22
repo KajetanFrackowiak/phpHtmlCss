@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: brown;
+}
+span {
+    display: inline;
+    margin-top: 15px;
+}
+
+.b {
+    font-weight: 700;
+}
+.l {
+    font-style: italic;
+}
+.s {
+    text-decoration: underline;
+}
+ul {
+    background-color: aquamarine;
+    list-style-type: circle; /*Our dots by it are changed*/
+    border: 5px solid greenyellow;
+    margin: 20px;
+}
+/*margin and pudding they differ a bit */
+ol {
+    background-color: gray;
+    padding: 20px;
+    border-width: 5px;
+    border-style: solid; /*shape*/
+    border-color: red;
+    border-radius: 25px; /*less of edges*/
+}

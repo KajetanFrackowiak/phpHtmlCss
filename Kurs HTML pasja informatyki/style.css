@@ -1,0 +1,30 @@
+body /*tło strony*/
+{
+    background-color: gray;
+    font-family: Verdana; /*krój czcionki*/
+    font-size: 20px;
+    color: white;
+}
+h1 /*nagłówek ale ustawiłem w head na html tam style do nagłówka a obowiązuje hierarchia wartości więc wykona się to z hyml*/
+{
+    font-size: 60px; /*powiększamy nagłówek*/
+    color: red !important; /* przez !important możemy złamać zasadę kaskadowosci by ten kolor napewno się wyświetlił a nie inny podany gdzieś np w html */
+}
+
+/* Nieodwiedzony link */
+a:link
+{
+    color: yellow;
+}
+
+/* Odwiedzony link */
+a:visited
+{
+    color: yellow;
+}
+
+/* Link po najechaniu kursorem */
+a:hover
+{
+    color:red;
+}

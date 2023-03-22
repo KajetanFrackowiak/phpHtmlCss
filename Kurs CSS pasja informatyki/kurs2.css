@@ -1,0 +1,45 @@
+body {
+    background-color: gray;
+}
+
+/*Różnica między haszem a kropką przed nazwą: # oznacza id, czyli unikatowt identyfikator (na stronie jest jeden o id="container, nie może być więcej")
+. oznacza klasę, czyli przepis na styl jakiegoś elementu (na stronie może byc wiele elementów o podanym class)
+wówczas gdybyśmy mieli więcej niż jeden element to w HTML byśmy musieli zapisać zamiast id= to class=
+class to zbiór cech które możemy wykorzystywać wielekrotnie, natomiast id tylko raz.
+Styl pojedyńczej opcji w menu gdzie mamy np: szerokowść wysokość, tło itp to takich opcji jest w menu przynajmniej kilka, wykorzystamy wtedy klasę.*/
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto; /* margin-left: auto, margin-right: auto. Dzięki temu przegrądarka już zawsze wyśrodkuje tego diva na ekranie, nie ważne jaka roździelczość ma użytkownik */
+}
+
+#logo {
+    color: white;
+    border: solid red;
+    border-width: thick;
+    margin-top: 20px;
+    font-size: 44px; /*rozmiar czcionki*/
+    background: blue;
+
+}
+
+#menu {
+
+}
+
+#topbar {
+
+}
+
+#sidebar {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
+
