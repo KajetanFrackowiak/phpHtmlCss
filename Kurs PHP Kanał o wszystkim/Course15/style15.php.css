@@ -1,0 +1,11 @@
+* {
+    text-align: center;
+    font-family: Mshtakan;
+    background: lime;
+}
+table {
+    display: inline-block;
+    border: 5px dashed #999;
+    border-collapse: collapse;
+}
+

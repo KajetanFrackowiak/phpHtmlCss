@@ -1,0 +1,15 @@
+* {
+    font-family: Mshtakan;
+    text-align: center;
+}
+
+table {
+    display: inline-block;
+    border: 5px solid #999;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 5px dotted #999;
+    padding: 5px;
+}
