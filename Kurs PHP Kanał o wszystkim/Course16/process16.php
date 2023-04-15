@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+    if (isset($_POST['login']) and isset($_POST['pass'])) {
+        $_SESSION['user'] = $_POST['login'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +15,13 @@
 </head>
 <body>
 <?php
-
+    if (isset($_SESSION['user'])) {
+        echo '<b>Logged in</b><br><br>';
+        echo 'LOGIN: ';
+        echo $_SESSION['user'];
+    } else {
+        echo 'Not logged in';
+    }
 ?>
 </body>
 </html>
