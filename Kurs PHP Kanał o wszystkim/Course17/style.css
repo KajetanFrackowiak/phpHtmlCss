@@ -1,0 +1,19 @@
+* {
+    font-family: sans-serif;
+    text-align: center;
+}
+table {
+    display: inline-block;
+    border: 1px solid #999;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #999;
+}
+a {
+    text-decoration: none;
+    color: #5482f8;
+}
+h3 {
+    font-size: 25px;
+}
