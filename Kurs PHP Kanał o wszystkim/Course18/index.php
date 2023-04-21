@@ -9,7 +9,7 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Game, guess the number</h1>
+<h1>Game = Guess the number</h1>
 
 <table>
     <tr>
@@ -46,12 +46,21 @@ session_start();
 
                 if ($num > $_SESSION['los']) {
                     echo 'Unfortunately, the drawn number is less then yours<br>';
+                    echo 'You have ' . 10 - $_SESSION['i'] . ' more attempts<br>';
                 }
                 elseif ($num < $_SESSION['los']) {
                     echo 'Unfortunately, the drawn number is greater then yours<br>';
+                    echo 'You have ' . 10 - $_SESSION['i'] . ' more attempts<br>';
                 }
-                elseif ($num == $_SESSION['los']) {
-                    echo 'Great, you guessed the numbers and won the game!!!';
+                else {
+                    echo 'Great, you guessed the number the ' .$_SESSION['i'] . ' times!!!';
+                    session_destroy();
+                }
+            } else {
+                if (isset($_SESSION['i'])) {
+                    echo 'Give next number...';
+                } else {
+                    echo 'Give first number';
                 }
             }
             ?>
