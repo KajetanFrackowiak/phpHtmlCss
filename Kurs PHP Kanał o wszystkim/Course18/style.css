@@ -1,0 +1,12 @@
+* {
+    font-family: sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+}
+table {
+    display: inline-block;
+    border: 3px solid #999;
+    border-collapse: collapse;
+}
