@@ -1,10 +1,17 @@
+<?php
+session_start();
+
+if (isset($_SESSION['zalogowany']) && ($_SESSION['zalogowany'] == true)) {
+    header('Location: gra.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="pl">
+<head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Cmpatible" content="IE=edge,chrome=1">
 <title>Osadnicy</title>
-<head>
-
 </head>
 <body>
 Tylko martwi urzeli koniec wojny - Platon<br><br>
@@ -14,5 +21,11 @@ Tylko martwi urzeli koniec wojny - Platon<br><br>
     Hasło: <br> <input type="password" name="haslo"> <br><br>
     <input type="submit" value="Zaloguj się">
 </form>
+<?php
+if (isset($_SESSION['blad'])) {
+    echo $_SESSION['blad'];
+}
+
+?>
 </body>
 </html>
