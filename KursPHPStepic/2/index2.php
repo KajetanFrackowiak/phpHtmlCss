@@ -16,7 +16,7 @@
 
 
 <?php
-$str = str_pad("Fred Flintstone", 69); //
+$str = str_pad("Fred Flintstone", 69, ' ', STR_PAD_LEFT); //
 echo "{$str}:35:Wilma";
 ?>
 
