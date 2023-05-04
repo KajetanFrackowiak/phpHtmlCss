@@ -38,4 +38,23 @@ echo "The page was generated in $time5 seconds\n\n";
 
 var_dump(checkdate(5, 25, 2014)) . "\n";
 var_dump(checkdate(5, 32, 3000)) . "\n";
+
+echo "\nDate function:\n";
+echo date("r")."\n";
+echo date("T")."\n";
+echo "\nGMD function\n";
+echo gmdate("r")."\n";
+echo gmdate("T")."\n\n";
+
+$localtime = localtime(time(), true);
+print_r($localtime) . "\n";
+$localtimeMonth = $localtime["tm_mon"];
+$localtimeYearDay = $localtime["tm_yday"];
+$localtimeWeekDay = $localtime["tm_wday"];
+$localtimeHour = $localtime["tm_hour"];
+$localtimeMinute = $localtime["tm_min"];
+$localtimeSec = $localtime["tm_sec"];
+echo "Today is $localtimeWeekDay"."th"." week's day. It is $localtimeYearDay"."th"." year's day. Current is $localtimeMonth\n";
+echo "Whereas the hour is $localtimeHour-$localtimeMinute-$localtimeSec"."s"."\n";
+//getdate and localtime are almost the same
 ?>
