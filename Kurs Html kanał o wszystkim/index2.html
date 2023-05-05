@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Kanał o wszystkim third part</title>
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <meta name="description" content="Course Youtube">
-    <meta name="keywords" content="course, html, css">
-    <meta name="author" content="Kajetan Frackowiak">
+    <title>My fourth task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="author" content="Kajetan Frąckowiak">
 </head>
 <body>
-<h1 class="h1">Heading</h1>
-<a target="_blank" href="https://google.pl">google webpage<br></a>
-<a target="_blank" href="test.html">webpage to test<br></a> <!--a do linków, target do otwierania w nowej karcie-->
-<a target="_blank" href="">Link with nothing</a>
-<a target="_blank" href="https://www.w3schools.com/cpp/">
-    <figure id="border" >
-    <img class="imageC++" src="https://th.bing.com/th/id/OIP.BlbJQi0_L7NhZG0MYrn6twHaFb?pid=ImgDet&rs=1"
-         alt="C++ image"/><br>
-        <figcaption id="sign">C++ tutorial</figcaption>
-    </figure>
-</a>
-<img src="" alt="Her isn't nothing"/>
+<form action="hello.php" method="post">
+    <label for="name">Imię</label>
+    <input type="text" name="name" id="name" required><br>
+    <label for="surname">Nazwisko:</label>
+    <input type="text" name="surname" id="surname" required><br>
+    <label for="email">Adres e-mail:</label>
+    <input type="email" name="email" id="email" required><br>
+    <input type="submit" id="submit" value="Wyślij">
+    <input type="reset" id="reset" value="Reset">
+</form>
 </body>
 </html>
