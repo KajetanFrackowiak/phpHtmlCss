@@ -1,18 +1,26 @@
 <?php
-$str = 'Example line of text';
-if (!$fd = fopen('test2.txt', 'wb')) {
-    print "File test2.txt cannot be make";
+//if (!$fd = fopen('test3.txt', 'r')) {
+//    echo "test3.txt file cannot be opened";
+//} else {
+//    $str = fgets($fd);
+//    echo $str;
+//    $str = fgets($fd);
+//    echo $str;
+//    fseek($fd, SEEK_SET); // moves us to the beginning of the file
+//    $str = fgets($fd);
+//    echo $str;
+//}
+//?>
+
+<?php
+$fp = fopen("test2.txt", "r+");
+
+if (flock($fp, LOCK_EX)) {
+    fwrite($fp, "Write something here\n");
+    flock($fp, LOCK_UN);
+    echo filesize('test2.txt') . "<br>";
+    echo filetype('test2.txt') . "<br>";
 } else {
-    if (fwrite($fd, $str) === false) {
-        print "An error occurred. The entry was not made";
-    } else {
-        print "String was saved\n";
-    }
-    $str = "<br>Next line of text";
-    if (fwrite($fd, $str, 10) === false) {
-        print "An error occurred. The entry was not made";
-    } else {
-        print "A string of length 10 was written";
-    }
+    echo "Couldn't get the lock!";
 }
 ?>
