@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Episode1</title>
+    <script type="text/javascript">
+        function sprawdz(event) {
+            event.preventDefault(); // Prevent form submission and page refresh
+
+            var liczba = document.getElementById("pole").value;
+            if (liczba > 0) {
+                document.getElementById("wynik").innerHTML = "dodatnia";
+            } else if (liczba == 0) {
+                document.getElementById("wynik").innerHTML = "Równa zeru";
+                playMusic();
+            } else {
+                document.getElementById("wynik").innerHTML = "Mniej niż zero";
+                playMusic();
+            }
+        }
+
+        function playMusic() {
+            var audio = new Audio('MNIEJ NIZ ZERO.MP3.mp3');
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="text" id="pole" />
+    <input type="submit" value="sprawdź" onclick="sprawdz(event)" />
+</form>
+
+<div id="wynik"></div>
+</body>
+</html>
