@@ -1,0 +1,60 @@
+<!--Atrybut logiczny required służy do oznaczania kontrolek formularza, których wypełnienie jest obowiązkowe
+Przypisania dokonujemy poprzez atrybut for (ang. dla). Żeby prawidłowo połączyć element z jego etykietą
+atrybut for wypełniamy nazwą atrybutu id danego elementu
+Naciśnięcie na etykietę powoduje automatycznie przejście do elementu <input>-->
+<!--required - określa, że pole musi zostać wypełnione.-->
+<!--pattern - określa wyrażenie regularne jaką musi spełniać wartość.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz zapisu na studia</title>
+</head>
+<body>
+<h1> Zapisy na studia</h1>
+<form action="Zadanie1.php" method="post">
+    <p>
+        <label for="imie">Imię: </label>
+        <input type="text" name="imie" id="imie" required>
+    </p>
+    <p>
+        <label for="nazwisko">Nazwisko: </label>
+        <input type="text" name="nazwisko" id="nazwisko" required>
+    </p>
+    <p>
+        <label for="telefon">Telefon: </label>
+        <input type="tel" name="telefon" id="telefon" pattern="[0-9]{9}" required>
+    </p>
+    <label for="email">E-mail: </label>
+    <input type="email" name="email" id="email" required>
+    <p>
+        <label for="kierunek">Kierunek: </label>
+        <select name="kierunek" id="kierunek">
+            <option value="informatyka">Informatyka</option>
+            <option value="matematyka">Matematyka</option>
+            <option value="fizyka">Fizyka</option>
+            <option value="chemia">Chemia</option>
+        </select>
+    </p>
+    <p>
+        <label for="preferowany_kontakt">Preferowany kontakt: </label>
+        <select name="preferowany_kontakt" id="preferowany_kontakt"></select>
+        <input type="checkbox" name="preferowany_kontakt[]" value="email">E-mail
+        <input type="checkbox" name="preferowany_kontakt[]" value="telefon">Telefon
+    </p>
+    <p>
+        <label for="niepelnosprawnosc">Niepelnosprawność: </label>
+        <select name="niepelnosprawnosc" id="niepelnosprawnosc"></select>
+        <input type="radio" name="niepelnosprawnosc" value="tak">Tak
+        <input type="radio" name="niepelnosprawnosc" value="nie">Nie
+    </p>
+    <p>
+        <label for="dodatkowe_informacje">Dodatkowe informacje: </label>
+        <textarea name="dodatkowe_informacje" id="dodatkowe_informacje" rows="5" cols="40"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Zapisz się na studia">
+    </p>
+</form>
+</body>
+</html>

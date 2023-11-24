@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator prosty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="Wynik.php" method="post">
+
+    <table>
+        <tr>
+            <td>
+                <label for="liczba1">Liczba 1:</label><br>
+                <input type="number" id="liczba1" name="liczba1" required>
+            </td>
+            <td>
+                <input type="radio" id="dodawanie" name="operacja" value="+" checked>
+                <label for="dodawanie">+</label><br>
+                <input type="radio" id="odejmowanie" name="operacja" value="-" checked>
+                <label for="odejmowanie">-</label><br>
+                <input type="radio" id="mnożenie" name="operacja" value="*" checked>
+                <label for="mnożenie">*</label><br>
+                <input type="radio" id="dzielenie" name="operacja" value="/" checked>
+                <label for="dzielenie">/</label><br>
+            </td>
+            <td>
+                <label for="liczba2">Liczba 2:</label><br>
+                <input type="number" id="liczba2" name="liczba2" required>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="submit" value="Oblicz">
+            </td>
+        </tr>
+    </table>
+
+
+</form>
+
+
+</body>
+</html>
