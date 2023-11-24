@@ -1,0 +1,16 @@
+body {
+    background: gray;
+}
+
+#hover-img {
+    /* dzięki tym pierwszym dwóm funkcjom umieścimy nasze zdjęcie na środku */
+    display: block; /* Ustawienie elementu jako blokowego, aby móc ustawić marginesy */
+    margin: 0 auto; /* Ustawienie marginesu górnego i dolnego na 0 oraz marginesu lewego i prawego na auto, co spowoduje, że element zostanie wycentrowany */
+    border: 5px solid red;
+    width: 1920px;
+    height: 1080px;
+}
+
+#hover-img:hover {
+    content: url("https://wallsdesk.com/wp-content/uploads/2017/01/Albert-Einstein-Wallpapers.jpg")
+}

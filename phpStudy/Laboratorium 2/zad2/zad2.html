@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista zakupów</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <h1>Lista zakupów</h1>
+    <ul id="lista"></ul>
+    <div id="wynik"></div>
+    <label>
+        Dodaj produkt:
+        <input type="text" id="produkt">
+    </label>
+    <button id="dodaj">Dodaj do listy</button>
+    <script>
+        var lista = document.getElementById("lista");
+        var produktInput = document.getElementById("produkt");
+        var dodajBtn = document.getElementById("dodaj");
+        var wynikDiv = document.getElementById("wynik");
+
+        dodajBtn.addEventListener("click", () => {
+            // Pobieranie wartości z pola input
+            var produkt = produktInput.value;
+
+            // Tworzenie nowego elementu listy i dodawanie do niej produktu
+            var li = document.createElement("li");
+            li.textContent = produkt;
+            lista.appendChild(li);
+
+            // Czyszczenie pola input po dodaniu produktu
+            produktInput.value = "";
+
+            // Aktualizowanie wyświetlanej listy produktów po dodaniu nowego produktu
+            var listaProduktow = lista.getElementsByTagName("li");
+            var ostatniProdukt = listaProduktow[listaProduktow.length - 1];
+            wynikDiv.textContent = "Właśnie dodałeś: " + ostatniProdukt.textContent;
+        });
+
+        produktInput.addEventListener("keyup", function(event) {
+            // Sprawdzenie czy wciśnięty został klawisz Enter
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                dodajBtn.click();
+            }
+        });
+    </script>
+</body>
+</html>

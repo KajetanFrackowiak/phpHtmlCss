@@ -1,0 +1,65 @@
+body {
+    background-color: yellow;
+}
+
+.container { /* wszystko co jest w body, lecz nie pomalujemy dzieki temu tła */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 { /* tytuł */
+    border: 5px solid rgb(251, 0, 255);
+    background-color: aqua;
+}
+
+.rating { /* klasa z etykietami i przyciskiem */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+    
+}
+
+.radio input[type="radio"] {
+    display: none;
+}
+
+.radio span.label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;  /* tu ustawiamy wysokośc cyfry w kółku */
+    background-color: red;
+}
+
+.radio input[type="radio"]:checked + span.label { /* gdy kliknę na kółko */
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+}
+
+button { 
+    padding: 10px 20px;
+    font-size: 50px;
+    background-color: lime;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover { /* po najechaniu na przycisk, przed kliknięciem */
+    background-color: #0b00d9;
+}
+
+#zad3lab2 {
+    margin-top: 20px;
+    font-size: 100px;
+    font-weight: bold;
+}

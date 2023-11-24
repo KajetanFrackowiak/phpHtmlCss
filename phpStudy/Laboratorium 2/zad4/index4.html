@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Changer</title>
+        <link rel="stylesheet" type="css" href="style4.css">
+        <script src="script4.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="text">Will be DISCO !!!</h1>
+            <div id="insc-color"> <!--źródła kolorów-->
+                <h2>Inscription color</h2> <!--wyboerz kolor dla zdania powyżej-->
+                <!--zaczynamy wypisywać jakie można wybrać kolory: -->
+                <button onclick="changeTextColor('red')">Red</button>
+                <button onclick="changeTextColor('green')">Green</button>
+                <button onclick="changeTextColor('blue')">Blue</button>
+                <button onclick="changeTextColor('yellow')">Yellow</button>
+                <button onclick="changeTextColor('fuchsia')">Fuchsia</button>
+                <button onclick="changeTextColor('cyan')">Cyan</button>
+                <button onclick="changeTextColor('black')">Black</button>
+            </div>
+            <div id="bg-color"> <!--div dla zmianu koloru tła-->
+                <h2>Background color</h2>
+                <button onclick="changeBackgroundColor('red')">Red</button>
+                <button onclick="changeBackgroundColor('green')">Green</button>
+                <button onclick="changeBackgroundColor('blue')">Blue</button>
+                <button onclick="changeBackgroundColor('yellow')">Yellow</button>
+                <button onclick="changeBackgroundColor('fuchsia')">Fuchsia</button>
+                <button onclick="changeBackgroundColor('cyan')">Cyan</button>
+                <button onclick="changeBackgroundColor('white')">White</button>
+            </div>
+        </div>
+    </body>
+</html>

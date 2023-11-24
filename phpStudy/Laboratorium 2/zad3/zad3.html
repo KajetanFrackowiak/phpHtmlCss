@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 3</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="skrypt3.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>How much do you rate the homepage of the lecturer?</h1>
+
+        <div class="rating"> 
+            <!--etykiety gdzie możemy wybrać odpowiedź tylko jedną-->
+            <label class="radio">
+                <input type="radio" name="rating" value="5" onclick="zad3a()">
+                <span class="label" id="zad3alab">5</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="rating" value="4" onclick="zad3b()">
+                <span class="label" id="zad3blab">4</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="rating" value="3" onclick="zad3c()">
+                <span class="label" id="zad3clab">3</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="rating" value="2" onclick="zad3d()">
+                <span class="label" id="zad3dlab">2</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="rating" value="1" onclick="zad3e()">
+                <span class="label" id="zad3elab">1</span>
+            </label>
+        
+        </div>
+        <button onclick="zad3()">Submit</button> <!--Gdy klikniemy w Submit to wyskoczy nam zawartość z funkcji 'zad3' -->
+        <div id="zad3lab2"></div>
+    
+    </div>
+</body>
+</html>
+
+<!--W HTML element <label> służy do umieszczania etykiety, która opisuje inny element na stronie, na przykład formularza. Etykieta jest zazwyczaj połączona
+    z innym elementem za pomocą atrybutu 'for', a element, który jest opisywany przez etykietę, identyfikowant jest za pomocą atrybutu 'id'.
+
+Przykład:
+<label for="username">Nazwa użytkownika:</label>
+<input type="text" id="username">
+
+W HTML istnieje wiele typów elementów formularzam takich jak 'input', 'select', 'textarea', itp. Każdy z tych elementów może mieć różne wartości atrybutu 'type'
+Na przykład 'input' może mieć wartość 'text','email','password','checkbox','radio',itp
+
+Element 'button' w HTML służy do tworzenia przycisków, które mogą być używane do wywoływania akcji na stronie, takich jak przekierowanie do innej strony, zapisanie formularza, itp.
+Button moze mieć rózne wartości atrybutu 'type', takie jak 'submit','reset','button'-->

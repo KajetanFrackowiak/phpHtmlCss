@@ -1,0 +1,33 @@
+#container {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#text {
+    font-size: 5em;
+    margin-bottom: 50px
+}
+
+#insc-color, #bg-color { /* od kolorów DISCO i tła */
+    display: inline-block;
+    margin-right: 50px;
+}
+
+h2 { /* Inscription color */
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: lightblue;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover { /* przed kliknięciem */
+    background-color: gray;
+    color: white;
+}

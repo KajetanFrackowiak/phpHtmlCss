@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sortowanie i średnia</title>
+    <link rel="stylesheet" type="text/css" href="style6.css">
+    <script src="script6.js"></script>
+
+</head>
+<body>
+<h1>Sortowanie i średnia</h1>
+<div>
+  <!--label służy do oznaczania etykiet dla innych elementów formularzy, takich jak pola tekstowe, pola wyboru, przyciski itp. -->
+  <!--Atrybut "for" definiuje powiązanie pomiędzy elementem label, a innym elementem formularza takim jak input, textarea, select itp. Aby powiązać elementy, wartość atrybutu "for" powinna odpowiadać
+   indentyfikatorowi elementu formularza. W ten sposób, po kliknięciu na etykietę, kursor przenosi sie do powiązanych z nią elementów formularza.
+   np: <label for="username">Nazwa użytkownika:</label>
+       <input type="text" id="username" name="username">-->
+  <label for="liczba">Liczba:</label>
+  <input type="number" id="liczba">
+  <button onclick="dodajLiczbe()">Dodaj!</button>
+</div>
+<div>
+  <h2>Liczby:</h2>
+  <ul id="listaLiczb"></ul>
+</div>
+<div>
+  <h3>Statystyki:</h3>
+  <!--Element <p> (od paragraph czyli akapit) definiu akapit tekstu. Text zawarty w elemencie <p> jest automatycznie oddzielany od tekstu poprzedzającego i następującego, co powoduje
+    , że wizualnie wygląda na oddzielny blok tekstu-->
+  <p id="suma"></p>
+  <p id="srednia"></p>
+</div>
+</body>
+</html>

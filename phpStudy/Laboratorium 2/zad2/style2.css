@@ -1,0 +1,25 @@
+body {
+    background: gray;
+}
+
+h1 {
+    background-color: rgb(206, 195, 38);
+    font-size: 50px;
+    color: rgb(129, 127, 255);
+    text-align: center;
+}
+
+#lista {
+    color: blue;
+    font: sans-serif;
+}
+
+li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+label {
+    font-size: 25px;
+}
+

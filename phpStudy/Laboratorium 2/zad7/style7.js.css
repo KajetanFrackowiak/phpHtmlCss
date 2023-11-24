@@ -1,0 +1,41 @@
+body {
+    background-color: aqua;
+}
+
+.RPS {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 40px;
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #4CAF50 ;
+    color: white;
+    border: none;
+    border-radius: 5px; /* zaokrąglenie boków*/
+    cursor: pointer; /* dzięki temu gdy wskazujemy na przycisk to pokazuje nam się kursor łapki */
+}
+
+button:hover {
+    background-color: #3e8e41; /* dzięki temu gdy klikamy to zmienia nam się kolor przycisku */
+}
+
+#result {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
